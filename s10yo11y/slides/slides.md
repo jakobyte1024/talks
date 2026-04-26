@@ -9,6 +9,7 @@ drawings:
   persist: false
 transition: fade
 mdc: true
+layout: cover
 ---
 
 
@@ -19,36 +20,33 @@ Dynatrace on STACKIT, managed by CGI
 Thorsten Jakoby
 
 ---
-layout: section
-
----
-
-# Intro
-asdf
-
-
----
 layout: image-right
 image: https://github.com/jakobyte1024/abstracts/blob/master/bio/pic/TJ2.jpg?raw=true
+backgroundSize: contain
 ---
 
 ## `whoami`
 
-Einige Worte über mich
+Thorsten is a technology consultant specializing in cloud security. 
 
-- Profilbild rechts
-- 3-4 Stationen
-- Kontakt / QR-Code
+He has designed and built cloud platforms supporting both legacy and modern application stacks across Azure, AWS, GCP, and STACKIT. 
+
+For clients across multiple industries, he has led large-scale migration programs, modernizing on-premises applications to cloud environments with zero downtime. 
+
+Furthermore, Thorsten frequently serves as a trainer for technologies related to containers and Kubernetes. 
+He often shares his experience at IT conferences. 
+
 
 ---
-layout: two-cols
+layout: image-right
+image: /images/cgiOverview.png
+backgroundSize: contain
 ---
 
 ## CGI
 
-Einige Worte über CGI
-
-::right::
+CGI ist ein globaler IT-Consulting-Konzern mit rund 94.000 Mitarbeitenden weltweit. 
+Was CGI besonders macht: globale Stärke und Skalierung, kombiniert mit einem sehr lokalen Delivery-Modell – nah an den Kunden, nah an den Teams und nah an der Umsetzung.
 
 ### Platzhalter
 
@@ -166,11 +164,10 @@ layout: two-cols
 
 ## Digitale Souveränität
 
-Von der Politik hin zum Techtalk - einer der wohl aktuell wichtigsten Begriffe für IT-Expert:innen: Digitale Souveränität. Dazu sagt die EU Commision
+Von der Politik hin zum Techtalk - einer der wichtigsten Begriffe für IT-Expert:innen ist aktuell wohl die Digitale Souveränität. Dazu sagt die EU Commision
 > Europe must now strengthen its digital sovereignty and set standards, rather than following those of others – with a clear focus on data, technology and infrastructure.
 
 _Digitale Souveränität bedeutet nicht, Systeme zu besitzen – sondern ihr Verhalten jederzeit nachvollziehen und beeinflussen zu können._
-
 
 Keine Observability → Keine Kontrolle → Keine Souveränität.
 
@@ -185,11 +182,11 @@ layout: two-cols
 
 ## Klarer Fall: O11y Plattformen auf EU Cloud 
 
-Es liegt die Vermutung nahe, dass souveräne IT-Landschaften Observability Plattformen brauchen.
+Souveräne IT-Landschaften brauchen Observability Plattformen.
 Doch im Spannungsfeld der Datenhoheit ist das mit manchen Tools schwierig.
 
-Gesucht sind starke Observability Plattformen im digital souveränen Betrieb innerhalb der EU.
-Passend zu den wachsenden Befürdnissen der Branchen.
+Passend zu den wachsenden Befürdnissen nach digitaler Souveränität der Branchen in der EU braucht es in der EU gehostete Observability Plattformen.
+Das möchten wir professionell als Managed Service Offering adressieren. 
 
 ::right::
 
@@ -198,42 +195,20 @@ Passend zu den wachsenden Befürdnissen der Branchen.
 Platzhalter
 
 ---
-layout: two-cols
+layout: image-right
+image: /images/o11y-platforms.png
+backgroundSize: contain
 ---
 
 ## Tooling-Landschaft
 
-continue here; darüber sprechen dass es viele gibt und wie wir gewählt haben
-
-- Open Source, SaaS, Hybrid und Vendor Suites
-- Unterschiedliche Staerken bei UX, Datenmodell, Automation und Enterprise-Funktionen
-- Auswahl war kein Default, sondern eine bewusste Abwaegung
-- Entscheidungskriterien gingen ueber Features deutlich hinaus
-
-::right::
-
-### Visual
-
-- Marktuebersicht
-- 2x2 oder Vergleichstabelle
-
----
-layout: two-cols
----
-
-# Warum wir Dynatrace gewaehlt haben
-
-- Reifes Produkt fuer Enterprise-Observability
-- Breite Abdeckung fuer Plattform, Anwendungen und Betrieb
-- Gute Eignung fuer Managed-Service-Betrieb statt Einzelprojekt-Nutzung
-- Differenzierung nicht nur technisch, sondern auch als vermarktbarer Service
-
-::right::
-
-### Visual
-
-- Decision Matrix
-- Vendor-Fit fuer Managed Service
+Es gibt viele gute Observability Tools - vor allem im Open Source Bereich.
+Im Managed Service Offering konzentrieren wir uns zunächst auf
+* kommerzielle Anbieter mit entsprechenden Wartungsverträgen
+* möglichen Selfhosted Varianten
+* wenig Marktbegleiter im öffentlichen Hosting
+* eigene Lieferfähigkeit in der Technologieberatung
+* Breite Abdeckung fuer Plattform, Anwendungen und Betrieb
 
 ---
 layout: section
