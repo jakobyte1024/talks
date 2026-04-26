@@ -11,6 +11,7 @@ transition: fade
 mdc: true
 ---
 
+
 # Sovereignty Through Observability
 
 Dynatrace on STACKIT, managed by CGI
@@ -22,21 +23,45 @@ layout: section
 
 ---
 
-# `whoami`
+# Intro
+asdf
+
+
+---
+layout: image-right
+image: https://github.com/jakobyte1024/abstracts/blob/master/bio/pic/TJ2.jpg?raw=true
+---
+
+## `whoami`
 
 Einige Worte über mich
 
+- Profilbild rechts
+- 3-4 Stationen
+- Kontakt / QR-Code
+
+---
+layout: two-cols
 ---
 
-# CGI
+## CGI
 
 Einige Worte über CGI
 
+::right::
+
+### Platzhalter
+
+- CGI Logo
+- Kennzahlen
+- Einordnung fuer den Kontext
+
+---
+layout: two-cols
 ---
 
-# Agenda
+## Agenda
 
-0. whoami
 1. Observability basics
 2. Warum O11y fuer Souveraenitaet relevant ist
 3. Tool-Auswahl und Dynatrace-Entscheidung
@@ -45,30 +70,66 @@ Einige Worte über CGI
 6. Betrieb, Automation und technische Huerden
 7. Ausblick auf weitere Services
 
+::right::
+
+### Out of scope
+
+- Werbung
+- Sales
+
 ---
 layout: section
 
 ---
 
-# Observability basics
+# Observability 101
 
 ---
+layout: two-cols
+---
 
-# Was ist Observability?
+## Was ist Observability?
 
-- Mehr als Monitoring: Logs, Metrics, Traces, Topology, Events
-- Ziel: Systeme verstehen, nicht nur Alarmierungen sammeln
+Observability (O11y) ist mehr als "nur" Monitoring.
+Es ist eine Fähigkeit die eine reife IT gezielt einsetzt.
+
+Aus vielen Daten und Quellen wird Gesamtsystem oder gar die ganze IT überwacht. Dazu gibt es "Säulen":
+* Logs
+* Metrics
+* Traces
+* Topology, Events
+
+Ziel ist es, Systeme zu verstehen - nicht nur Alarmierungen sammeln
+
+Monitoring beantwortet bekannte Fragen - Observability hilft bei unbekannten Fehlerbildern.
+
+
+::right::
+
+### Visual
+
+Ein Bild das End To End O11y oder Tracing zeigt
+
+---
+layout: two-cols
+---
+
+## Aktiv und Passiv
+
+
+
+- Wert entsteht erst durch Korrelation und Kontext
+- Kernfrage fuer den Talk: Wie wird daraus ein souveraener Service?
+
 - Observability beschreibt Erklaerbarkeit und Diagnosefaehigkeit
 - Besonders relevant in verteilten Plattformen und Managed Services
 
----
+::right::
 
-# Warum ist das mehr als Monitoring?
+### Visual
 
-- Monitoring beantwortet bekannte Fragen
-- Observability hilft bei unbekannten Fehlerbildern
-- Wert entsteht erst durch Korrelation und Kontext
-- Kernfrage fuer den Talk: Wie wird daraus ein souveraener Service?
+- Gegenueberstellung
+- Monitoring vs. Observability
 
 ---
 layout: section
@@ -78,11 +139,24 @@ layout: section
 # O11y fuer Souveraenitaet
 
 ---
+layout: two-cols
+---
 
 # Paramount
 
 Bild vom Observability is paramount und erzählen was auf dem Talk da erzählt wird
 
+erklären wegen siem
+
+::right::
+
+### Bild
+
+- Screenshot / Foto
+- Callout: "Observability is paramount"
+
+---
+layout: two-cols
 ---
 
 # Transparenz, Kontrolle, Nachvollziehbarkeit
@@ -91,6 +165,15 @@ Bild vom Observability is paramount und erzählen was auf dem Talk da erzählt w
 - Operative Unabhaengigkeit braucht belastbare Telemetrie
 - Regulatorik und Trust-Anforderungen verlangen nachvollziehbaren Betrieb
 
+::right::
+
+### Visual
+
+- Dreiklang-Diagramm
+- Audit / Control / Telemetry
+
+---
+layout: two-cols
 ---
 
 # Warum wird das zum Souveraenitaets-Thema?
@@ -100,6 +183,13 @@ Bild vom Observability is paramount und erzählen was auf dem Talk da erzählt w
 - Souveraenitaet betrifft daher Plattform, Prozesse und Telemetrie
 - Ohne O11y ist ein Managed Service auf einer souveraenen Plattform nicht glaubwuerdig
 
+::right::
+
+### Beispiel
+
+- Regulatorik-Iconset
+- Architektur mit Trust Boundary
+
 ---
 layout: section
 
@@ -107,6 +197,9 @@ layout: section
 # Tool-Auswahl und Dynatrace-Entscheidung
 
 ---
+layout: two-cols
+---
+
 # Tooling-Landschaft
 
 - Open Source, SaaS, Hybrid und Vendor Suites
@@ -114,7 +207,17 @@ layout: section
 - Auswahl war kein Default, sondern eine bewusste Abwaegung
 - Entscheidungskriterien gingen ueber Features deutlich hinaus
 
+::right::
+
+### Visual
+
+- Marktuebersicht
+- 2x2 oder Vergleichstabelle
+
 ---
+layout: two-cols
+---
+
 # Warum wir Dynatrace gewaehlt haben
 
 - Reifes Produkt fuer Enterprise-Observability
@@ -122,14 +225,21 @@ layout: section
 - Gute Eignung fuer Managed-Service-Betrieb statt Einzelprojekt-Nutzung
 - Differenzierung nicht nur technisch, sondern auch als vermarktbarer Service
 
+::right::
+
+### Visual
+
+- Decision Matrix
+- Vendor-Fit fuer Managed Service
+
 ---
 layout: section
 ---
 
-# Kapitel 4
+# USP wanted
 
-# USP finden
-
+---
+layout: two-cols
 ---
 
 # BYOK als moeglicher USP
@@ -139,7 +249,17 @@ layout: section
 - Untersuchung: Was ist technisch und betrieblich realistisch?
 - Produktfrage: Wo entsteht echter Mehrwert statt nur Feature-Checkliste?
 
+::right::
+
+### Visual
+
+- Key Lifecycle
+- BYOK Boundary Diagramm
+
 ---
+layout: two-cols
+---
+
 # Produktdifferenzierung statt Feature-Liste
 
 - Ein USP muss technisch glaubwuerdig und operativ tragfaehig sein
@@ -147,11 +267,27 @@ layout: section
 - Interessant ist, was fuer Kunden echten Governance- und Vertrauenswert schafft
 - BYOK war deshalb nicht nur Technik-Experiment, sondern Produktforschung
 
+::right::
+
+### Visual
+
+- USP Pyramide
+- Kundenwert vs. Aufwand
+
+---
+layout: two-cols
 ---
 
 # Traffic
 
 geht nirgends anders hin
+
+::right::
+
+### Visual
+
+- Routing-Skizze
+- Marketplace Traffic Flow
 
 ---
 layout: section
@@ -159,6 +295,8 @@ layout: section
 
 # Marketplace
 
+---
+layout: two-cols
 ---
 
 # Vom Tool zum Produkt
@@ -168,6 +306,15 @@ layout: section
 - Produktisierung verlangt Standardisierung ohne Verlust der Flexibilitaet
 - Marketplace-Kontext bringt technische und kommerzielle Randbedingungen mit
 
+::right::
+
+### Visual
+
+- Vom Produkt zum Service
+- Marketplace Architektur
+
+---
+layout: two-cols
 ---
 
 # Pricing und Consumption Issues
@@ -177,12 +324,21 @@ layout: section
 - Technische Architektur wird durch Abrechnung und Mandantenfaehigkeit beeinflusst
 - Monetarisierung ist kein Nachgedanke, sondern Architekturtreiber
 
+::right::
+
+### Visual
+
+- Pricing-Modell
+- Consumption-Funnel
+
 ---
 layout: section
 ---
 
 # SRE
 
+---
+layout: two-cols
 ---
 
 # SRE-Ansatz und Automatisierung
@@ -192,6 +348,22 @@ layout: section
 - Terraform fuer Infrastruktur und Standard-Workflows
 - Ansible fuer Luecken, Day-2-Operationen und verfahrene Produktstellen
 
+::right::
+
+### Code / Diagramm
+
+- Terraform Pipeline
+- Ansible Workflow
+
+~~~yaml
+# Beispiel fuer IaC / Automation
+pipeline:
+  - terraform
+  - ansible
+~~~
+
+---
+layout: two-cols
 ---
 
 # Quirks, Networking und Support
@@ -201,12 +373,26 @@ layout: section
 - Netzwerktrennung und Environment-Grenzen beeinflussten das Betriebsmodell direkt
 - Support war schnell und gut, trotz mehrerer technischer Issues im Aufbau
 
+::right::
+
+### Visual
+
+- Netzwerkdiagramm
+- API-Flow
+
+~~~ts
+// Beispiel: API statt Terraform
+await provisionAlbRule()
+~~~
+
 ---
 layout: section
 ---
 
 # Ausblick
 
+---
+layout: two-cols
 ---
 
 # Wiederverwendbare Muster
@@ -215,6 +401,15 @@ layout: section
 - Aufbau von Betriebs-, Marketplace- und Automation-Patterns fuer weitere Services
 - Wiederverwendbare Bestandteile: Provisioning, Routing, Consumption, Supportmodell
 
+::right::
+
+### Visual
+
+- Reusable Building Blocks
+- Service Blueprint
+
+---
+layout: two-cols
 ---
 
 # Welche Services folgen?
@@ -224,6 +419,15 @@ layout: section
 - Marketplace und Managed Operations werden zur wiederholbaren Plattformfaehigkeit
 - Abschlussfrage: Welche weiteren Managed Services profitieren von demselben Ansatz?
 
+::right::
+
+### Visual
+
+- Service-Roadmap
+- Portfolio-Optionen
+
+---
+layout: two-cols
 ---
 
 # Kernaussagen
@@ -232,6 +436,13 @@ layout: section
 - Die Tool-Auswahl war ein Produkt- und Betriebsentscheid, nicht nur ein Feature-Vergleich
 - Marketplace, Consumption und Security beeinflussen die Architektur direkt
 - SRE-Prinzipien und starke Automation kompensieren viele Produktgrenzen
+
+::right::
+
+### Summary
+
+- 3 Key Messages
+- Optional: QR-Code / Contact
 
 ---
 layout: end
