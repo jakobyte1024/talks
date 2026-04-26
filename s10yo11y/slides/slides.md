@@ -103,7 +103,6 @@ Ziel ist es, Systeme zu verstehen - nicht nur Alarmierungen sammeln
 
 Monitoring beantwortet bekannte Fragen - Observability hilft bei unbekannten Fehlerbildern.
 
-
 ::right::
 
 ### Visual
@@ -116,20 +115,43 @@ layout: two-cols
 
 ## Aktiv und Passiv
 
+Durch Observability entstehen Blickwinkel auf Systeme, durch Korrelation und Kontext.
+Diese können verschiedenste Schwerpunkte haben, beispielsweise:
 
+* Erklärbarkeit / Diagnose / Post.Mortem
+* Performanz oder Durchlaufzeiten einer Request
+* Anamolien beobachten und behandeln
+* Resilience Control
 
-- Wert entsteht erst durch Korrelation und Kontext
-- Kernfrage fuer den Talk: Wie wird daraus ein souveraener Service?
-
-- Observability beschreibt Erklaerbarkeit und Diagnosefaehigkeit
-- Besonders relevant in verteilten Plattformen und Managed Services
-
+Erkennt man daran Gruppen?
 ::right::
 
-### Visual
+### Beispiele
 
-- Gegenueberstellung
-- Monitoring vs. Observability
+* Actuator
+* Adaptive Scaling (Triggern von Scaling-Entscheidungen)
+* SIEM
+* Security Enforcement (plötzlich viele Token Requests, ungewöhnlich viele M2M Calls)
+
+---
+layout: image-right
+image: images/lhca-stage1.png
+backgroundSize: contain
+---
+
+## Paramount
+
+Dass Observability von besonderer Wichtigkeit sein kann, zeigt sich schnell wenn man typische Angriffsszenarien simuliert.
+Wie wird folgendes Szenario erkannt?
+* Plötzlich viele Token Requests
+* Häufung von Service Calls
+* Mehrere fehlgeschlagene Authentifizierungen
+* Pods starten offenbar chaotisch neu, jedoch kein Service Down
+
+Ohne Security Context sind dies losgelöste Ereignisse, welche vielleicht gar nicht bemerkt werden.
+
+Im Talk und Lab [Live Hacking Cloud Architectures](https://www.youtube.com/watch?v=ZC1YwpwVlo0) zeigen wir typische Szenarien und enden mit einer Weisheit.
+
 
 ---
 layout: section
@@ -142,65 +164,46 @@ layout: section
 layout: two-cols
 ---
 
-# Paramount
+## Digitale Souveränität
 
-Bild vom Observability is paramount und erzählen was auf dem Talk da erzählt wird
+Von der Politik hin zum Techtalk - einer der wohl aktuell wichtigsten Begriffe für IT-Expert:innen: Digitale Souveränität. Dazu sagt die EU Commision
+> Europe must now strengthen its digital sovereignty and set standards, rather than following those of others – with a clear focus on data, technology and infrastructure.
 
-erklären wegen siem
+_Digitale Souveränität bedeutet nicht, Systeme zu besitzen – sondern ihr Verhalten jederzeit nachvollziehen und beeinflussen zu können._
+
+
+Keine Observability → Keine Kontrolle → Keine Souveränität.
 
 ::right::
 
-### Bild
-
-- Screenshot / Foto
-- Callout: "Observability is paramount"
+### Visual
+Platzhalter
 
 ---
 layout: two-cols
 ---
 
-# Transparenz, Kontrolle, Nachvollziehbarkeit
+## Klarer Fall: O11y Plattformen auf EU Cloud 
 
-- Transparenz ist Voraussetzung fuer Kontrolle und Auditierbarkeit
-- Operative Unabhaengigkeit braucht belastbare Telemetrie
-- Regulatorik und Trust-Anforderungen verlangen nachvollziehbaren Betrieb
+Es liegt die Vermutung nahe, dass souveräne IT-Landschaften Observability Plattformen brauchen.
+Doch im Spannungsfeld der Datenhoheit ist das mit manchen Tools schwierig.
+
+Gesucht sind starke Observability Plattformen im digital souveränen Betrieb innerhalb der EU.
+Passend zu den wachsenden Befürdnissen der Branchen.
 
 ::right::
 
 ### Visual
 
-- Dreiklang-Diagramm
-- Audit / Control / Telemetry
+Platzhalter
 
 ---
 layout: two-cols
 ---
 
-# Warum wird das zum Souveraenitaets-Thema?
+## Tooling-Landschaft
 
-- Ein Managed Service muss nicht nur sicher sein, sondern belegbar beherrschbar
-- Datenhoheit ohne Betriebs-Observability bleibt unvollstaendig
-- Souveraenitaet betrifft daher Plattform, Prozesse und Telemetrie
-- Ohne O11y ist ein Managed Service auf einer souveraenen Plattform nicht glaubwuerdig
-
-::right::
-
-### Beispiel
-
-- Regulatorik-Iconset
-- Architektur mit Trust Boundary
-
----
-layout: section
-
----
-# Tool-Auswahl und Dynatrace-Entscheidung
-
----
-layout: two-cols
----
-
-# Tooling-Landschaft
+continue here; darüber sprechen dass es viele gibt und wie wir gewählt haben
 
 - Open Source, SaaS, Hybrid und Vendor Suites
 - Unterschiedliche Staerken bei UX, Datenmodell, Automation und Enterprise-Funktionen
@@ -366,7 +369,7 @@ pipeline:
 layout: two-cols
 ---
 
-# Quirks, Networking und Support
+## Quirks, Networking und Support
 
 - ALB-Funktionalitaet gab es nur via API, nicht ueber Terraform
 - API Gateway wurde auch fuer monetarisierte APIs und Environment-Routing relevant
@@ -384,6 +387,23 @@ layout: two-cols
 // Beispiel: API statt Terraform
 await provisionAlbRule()
 ~~~
+
+
+---
+layout: two-cols
+---
+
+## Team shoutout
+
+- CGI Team
+- STACKIT Support
+
+::right::
+
+### Visual
+
+- Bilder usw
+
 
 ---
 layout: section
