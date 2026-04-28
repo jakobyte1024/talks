@@ -15,6 +15,8 @@ npm run build
 
 The entrypoint for the deck is `slides.md`.
 
+Static assets for slides should be placed in `public/images/`.
+
 ## Two-column content slides
 
 This deck uses only Slidev built-in layouts.
@@ -34,7 +36,7 @@ layout: two-cols
 
 ::right::
 
-![Architecture](./images/architecture.png)
+![Architecture](images/architecture.png)
 ```
 
 Code snippets work the same way:
