@@ -1,5 +1,5 @@
 ---
-theme: default
+theme: nord
 title: Sovereignty Through Observability
 titleTemplate: '%s'
 info: |
@@ -16,6 +16,8 @@ layout: cover
 # Sovereignty Through Observability
 
 Dynatrace on STACKIT, managed by CGI
+
+How we built the service
 
 Thorsten Jakoby
 
@@ -38,7 +40,7 @@ He often shares his experience at IT conferences.
 
 
 ---
-layout: image-right
+layout: image-left
 image: /images/cgiOverview.png
 backgroundSize: contain
 ---
@@ -46,13 +48,8 @@ backgroundSize: contain
 ## CGI
 
 CGI ist ein globaler IT-Consulting-Konzern mit rund 94.000 Mitarbeitenden weltweit. 
+
 Was CGI besonders macht: globale Stärke und Skalierung, kombiniert mit einem sehr lokalen Delivery-Modell – nah an den Kunden, nah an den Teams und nah an der Umsetzung.
-
-### Platzhalter
-
-- CGI Logo
-- Kennzahlen
-- Einordnung fuer den Kontext
 
 ---
 layout: two-cols
@@ -83,7 +80,9 @@ layout: section
 # Observability 101
 
 ---
-layout: two-cols
+layout: image-right
+image: /images/o11y-overview.png
+backgroundSize: contain
 ---
 
 ## Was ist Observability?
@@ -101,14 +100,10 @@ Ziel ist es, Systeme zu verstehen - nicht nur Alarmierungen sammeln
 
 Monitoring beantwortet bekannte Fragen - Observability hilft bei unbekannten Fehlerbildern.
 
-::right::
-
-### Visual
-
-Ein Bild das End To End O11y oder Tracing zeigt
-
 ---
-layout: two-cols
+layout: image-left
+image: /images/o11y-activeexample.png
+backgroundSize: contain
 ---
 
 ## Aktiv und Passiv
@@ -116,20 +111,10 @@ layout: two-cols
 Durch Observability entstehen Blickwinkel auf Systeme, durch Korrelation und Kontext.
 Diese können verschiedenste Schwerpunkte haben, beispielsweise:
 
-* Erklärbarkeit / Diagnose / Post.Mortem
+* Erklärbarkeit / Diagnose / Post-Mortem
 * Performanz oder Durchlaufzeiten einer Request
 * Anamolien beobachten und behandeln
 * Resilience Control
-
-Erkennt man daran Gruppen?
-::right::
-
-### Beispiele
-
-* Actuator
-* Adaptive Scaling (Triggern von Scaling-Entscheidungen)
-* SIEM
-* Security Enforcement (plötzlich viele Token Requests, ungewöhnlich viele M2M Calls)
 
 ---
 layout: image-right
@@ -143,7 +128,7 @@ Dass Observability von besonderer Wichtigkeit sein kann, zeigt sich schnell wenn
 Wie wird folgendes Szenario erkannt?
 * Plötzlich viele Token Requests
 * Häufung von Service Calls
-* Mehrere fehlgeschlagene Authentifizierungen
+* Fehlgeschlagene Authentifizierungen
 * Pods starten offenbar chaotisch neu, jedoch kein Service Down
 
 Ohne Security Context sind dies losgelöste Ereignisse, welche vielleicht gar nicht bemerkt werden.
@@ -159,7 +144,9 @@ layout: section
 # O11y fuer Souveraenitaet
 
 ---
-layout: two-cols
+layout: image-right
+image: images/o11y-europestrength.png
+backgroundSize: contain
 ---
 
 ## Digitale Souveränität
@@ -171,13 +158,10 @@ _Digitale Souveränität bedeutet nicht, Systeme zu besitzen – sondern ihr Ver
 
 Keine Observability → Keine Kontrolle → Keine Souveränität.
 
-::right::
-
-### Visual
-Platzhalter
-
 ---
-layout: two-cols
+layout: image-right
+image: images/o11y-challenge.png
+backgroundSize: contain
 ---
 
 ## Klarer Fall: O11y Plattformen auf EU Cloud 
@@ -187,12 +171,6 @@ Doch im Spannungsfeld der Datenhoheit ist das mit manchen Tools schwierig.
 
 Passend zu den wachsenden Befürdnissen nach digitaler Souveränität der Branchen in der EU braucht es in der EU gehostete Observability Plattformen.
 Das möchten wir professionell als Managed Service Offering adressieren. 
-
-::right::
-
-### Visual
-
-Platzhalter
 
 ---
 layout: image-right
@@ -210,47 +188,50 @@ Im Managed Service Offering konzentrieren wir uns zunächst auf
 * eigene Lieferfähigkeit in der Technologieberatung
 * Breite Abdeckung fuer Plattform, Anwendungen und Betrieb
 
+
 ---
 layout: section
----
-
-# USP wanted
 
 ---
-layout: two-cols
----
 
-# BYOK als moeglicher USP
-
-- Bring Your Own Key als Souveraenitaets-Baustein
-- Relevanz fuer Trust, Compliance und Datenhoheit
-- Untersuchung: Was ist technisch und betrieblich realistisch?
-- Produktfrage: Wo entsteht echter Mehrwert statt nur Feature-Checkliste?
-
-::right::
-
-### Visual
-
-- Key Lifecycle
-- BYOK Boundary Diagramm
+# Wanted: USP
 
 ---
-layout: two-cols
+layout: image-right
+image: /images/sales.png
+backgroundSize: contain
 ---
 
-# Produktdifferenzierung statt Feature-Liste
+# Was brauchen denn unsere Kunden?
 
-- Ein USP muss technisch glaubwuerdig und operativ tragfaehig sein
-- Nicht jede Plattform- oder Security-Funktion taugt als Produktmerkmal
-- Interessant ist, was fuer Kunden echten Governance- und Vertrauenswert schafft
-- BYOK war deshalb nicht nur Technik-Experiment, sondern Produktforschung
+Nun da wir die Idee und eine gute Begründung haben, brauchen wir einen USP.
 
-::right::
+<v-clicks>
 
-### Visual
+- Datenhoheit über in-transit und at rest
+- Traffichoheit
+- Vertragsmanagement
+- Shared & Dedicated Offering
 
-- USP Pyramide
-- Kundenwert vs. Aufwand
+</v-clicks>
+
+---
+layout: image-left
+image: /images/deliveryteam.png
+backgroundSize: contain
+---
+
+# Und was brauchen wir in der Service-Delivery?
+
+Damit wir einen guten Service liefern
+
+<v-clicks>
+
+- Scalability by design
+- Load & Performance Testing
+- Staging
+- Operational Readiness
+</v-clicks>
 
 ---
 layout: two-cols
@@ -266,6 +247,25 @@ geht nirgends anders hin
 
 - Routing-Skizze
 - Marketplace Traffic Flow
+
+---
+layout: image-right
+image: /images/thesismax.png
+backgroundSize: contain
+---
+
+# Research & Thesis
+
+Das BYOK Thema war komplex.
+So komplex dass sogar eine ganze Forschungsarbeit von Max Strack dazu verfasst wurde
+
+>
+> Die Arbeit untersucht, wie ein Managed Dynatrace Service auf STACKIT mit Bring Your Own Key souveräner betrieben werden kann. 
+> Dafür wird die Persistenzschicht per dm-crypt/LUKS verschlüsselt und die Schlüsselkontrolle über das STACKIT KMS betrachtet. 
+> Verglichen werden Dedicated- und Shared-Betriebsmodelle hinsichtlich Sicherheit, Compliance und Datensouveränität.
+>
+
+Max wird dazu vielleicht eigene Talks geben, stay tuned :)
 
 ---
 layout: section
