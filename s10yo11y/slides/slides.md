@@ -1,5 +1,5 @@
 ---
-theme: nord
+theme: default
 title: Sovereignty Through Observability
 titleTemplate: '%s'
 info: |
@@ -159,7 +159,7 @@ _Digitale Souveränität bedeutet nicht, Systeme zu besitzen – sondern ihr Ver
 Keine Observability → Keine Kontrolle → Keine Souveränität.
 
 ---
-layout: image-right
+layout: image-left
 image: images/o11y-challenge.png
 backgroundSize: contain
 ---
@@ -194,7 +194,7 @@ layout: section
 
 ---
 
-# Wanted: USP
+# Wanted on Marketplace: USP
 
 ---
 layout: image-right
@@ -202,14 +202,14 @@ image: images/sales.png
 backgroundSize: contain
 ---
 
-# Was brauchen denn unsere Kunden?
+## Was brauchen denn unsere Kunden?
 
 Nun da wir die Idee und eine gute Begründung haben, brauchen wir einen USP.
 
 <v-clicks>
 
 - Datenhoheit über in-transit und at rest
-- Traffichoheit
+- Traffic-Hoheit
 - Vertragsmanagement
 - Shared & Dedicated Offering
 
@@ -221,7 +221,7 @@ image: images/deliveryteam.png
 backgroundSize: contain
 ---
 
-# Und was brauchen wir in der Service-Delivery?
+## Und was brauchen wir in der Service-Delivery?
 
 Damit wir einen guten Service liefern
 
@@ -234,19 +234,154 @@ Damit wir einen guten Service liefern
 </v-clicks>
 
 ---
+layout: image-right
+image: images/marketplaceO11dsol.png
+backgroundSize: contain
+---
+
+## Das Ziel: Marketplace Observability Integration
+
+Die Fähigkeit ist wichtig und der Anbietermarkt groß.
+Wir denken an eine umfangreiche Integration des STACKIT Marketplace in alle passenden Workloads und Ressourcen.
+
+Nicht "nur" Installation, sondern Betriebsmodell, Support und Consumption
+Doch ein Marketplace-Kontext bringt technische und kommerzielle Randbedingungen mit.
+
+---
+layout: image-left
+image: images/marketplace-comsumption.png
+backgroundSize: contain
+---
+
+## Pricing und Consumption
+
+Dynatrace und ähnliche Tools nutzen ein ausgereiftes und feingranulares Preismodell.
+Das ist nahezu das Gegenteil zu "monatlicher Rate auf Basis T-Shirt Sizes" 
+
+- Consumption muss fuer Kunden nachvollziehbar und steuerbar sein
+- Pricing passt nicht automatisch zu Plattform- und Marketplace-Modellen
+- Technische Architektur wird durch Abrechnung und Mandantenfaehigkeit beeinflusst
+
+Das heißt jedoch auch dass der Marketplace nicht zwingend Consumption Insights generieren muss.
+Monetarisierung ist kein Nachgedanke, sondern Architekturtreiber
+
+---
+layout: section
+---
+
+# Service Delivery
+
+---
+layout: image-right
+image: images/dt-teamchallenge.png
+backgroundSize: contain
+---
+
+## SRE-Ansatz und Automatisierung
+
+> Site Reliability Engineering (SRE)
+
+Eine Site ist kein einzelner Server, sondern ein nutzbares System aus Anwendungen, Infrastruktur und Abhängigkeiten.
+SRE sorgt dafür, dass diese Site zuverlässig läuft – messbar, automatisiert und mit klaren Zielen für Verfügbarkeit und Qualität.
+
+SRE kann man im Team machen.
+Solche Teams arbeiten oft mit Terraform, Ansible, GitOps, Kubernetes, Service Mesh, Incident Management, OnCall
+
+---
+layout: image-left
+image: images/dt-originalArch.png
+backgroundSize: contain
+---
+
+## SRE für Non-Cloud-Native
+
+Dynatrace ist führend in Feature und Produktdesign.
+In der Managed-Variante ist es kein klassisches SRE-first Design
+Der Fokus liegt vermutlich auf Kompatibilität zu den meisten Datacenter ein eher klassisches Setup.
+
+Trotzdem braucht der Service SLO-Denken, Runbooks, Automatisierung und Autoscaling.
+Das muss unser Team nun selbst bauen.
+
+---
+layout: image-right
+image: images/dt-team.png
+backgroundSize: contain
+---
+
+## Team
+
+An der Challenge war ein Team verschiedenster Senioritätsstufen interessiert.
+Ein Mix
+- Cloud Engineeers
+- Observability Consultants
+- Architekten
+
+begannen mit der Einarbeitung in STACKIT und Dynatrace.
+
+---
+layout: image-left
+image: images/dt-targetArch.png
+backgroundSize: contain
+---
+
+## Architekturdesign
+
+Wir haben uns eine Architektur überlegt, die zwei Betriebsmodelle sauber trennt und in zwei Aspekten denkt
+
+- Dedicated: stark isolierte Kunden- oder Tenant-Setups
+- Shared: für mehrere Kunden
+
+Beide Designs sind darauf ausgelegt dass eingehender Traffic _extern_ nach STACKIT kommt oder _intern_ aus STACKIT emittiert wird.
+
+Das API Gateway kann basierend darauf Routing-Entscheidungen treffen.
+Damit adressieren wir Traffic-Hoheit.
+
+---
 layout: two-cols
 ---
 
-# Traffic
+## How to install
 
-geht nirgends anders hin
+und dann ansible
 
 ::right::
 
 ### Visual
 
-- Routing-Skizze
-- Marketplace Traffic Flow
+tbd
+
+---
+layout: two-cols
+---
+
+## Quirks, Networking und Support
+
+- ALB-Funktionalitaet gab es nur via API, nicht ueber Terraform
+- API Gateway wurde auch fuer monetarisierte APIs und Environment-Routing relevant
+- Netzwerktrennung und Environment-Grenzen beeinflussten das Betriebsmodell direkt
+- Support war schnell und gut, trotz mehrerer technischer Issues im Aufbau
+
+::right::
+
+### Visual
+
+- Netzwerkdiagramm
+- API-Flow
+
+---
+layout: two-cols
+---
+
+## Team shoutout
+
+- CGI Team
+- STACKIT Support
+
+::right::
+
+### Visual
+
+- Bilder usw
 
 ---
 layout: image-right
@@ -271,126 +406,13 @@ Max wird dazu vielleicht eigene Talks geben, stay tuned :)
 layout: section
 ---
 
-# Marketplace
-
----
-layout: two-cols
----
-
-# Vom Tool zum Produkt
-
-- Zielbild: Dynatrace als Managed Service auf dem STACKIT Marketplace
-- Nicht nur Installation, sondern Betriebsmodell, Support und Consumption
-- Produktisierung verlangt Standardisierung ohne Verlust der Flexibilitaet
-- Marketplace-Kontext bringt technische und kommerzielle Randbedingungen mit
-
-::right::
-
-### Visual
-
-- Vom Produkt zum Service
-- Marketplace Architektur
-
----
-layout: two-cols
----
-
-# Pricing und Consumption Issues
-
-- Consumption muss fuer Kunden nachvollziehbar und steuerbar sein
-- Pricing passt nicht automatisch zu Plattform- und Marketplace-Modellen
-- Technische Architektur wird durch Abrechnung und Mandantenfaehigkeit beeinflusst
-- Monetarisierung ist kein Nachgedanke, sondern Architekturtreiber
-
-::right::
-
-### Visual
-
-- Pricing-Modell
-- Consumption-Funnel
-
----
-layout: section
----
-
-# SRE
-
----
-layout: two-cols
----
-
-# SRE-Ansatz und Automatisierung
-
-- Dynatrace ist kein klassisches SRE-first Produkt aus eigener Entwicklung
-- Trotzdem braucht der Service SLO-Denken, Runbooks, Automatisierung und Incident-Lernen
-- Terraform fuer Infrastruktur und Standard-Workflows
-- Ansible fuer Luecken, Day-2-Operationen und verfahrene Produktstellen
-
-::right::
-
-### Code / Diagramm
-
-- Terraform Pipeline
-- Ansible Workflow
-
-~~~yaml
-# Beispiel fuer IaC / Automation
-pipeline:
-  - terraform
-  - ansible
-~~~
-
----
-layout: two-cols
----
-
-## Quirks, Networking und Support
-
-- ALB-Funktionalitaet gab es nur via API, nicht ueber Terraform
-- API Gateway wurde auch fuer monetarisierte APIs und Environment-Routing relevant
-- Netzwerktrennung und Environment-Grenzen beeinflussten das Betriebsmodell direkt
-- Support war schnell und gut, trotz mehrerer technischer Issues im Aufbau
-
-::right::
-
-### Visual
-
-- Netzwerkdiagramm
-- API-Flow
-
-~~~ts
-// Beispiel: API statt Terraform
-await provisionAlbRule()
-~~~
-
-
----
-layout: two-cols
----
-
-## Team shoutout
-
-- CGI Team
-- STACKIT Support
-
-::right::
-
-### Visual
-
-- Bilder usw
-
-
----
-layout: section
----
-
 # Ausblick
 
 ---
 layout: two-cols
 ---
 
-# Wiederverwendbare Muster
+## Wiederverwendbare Muster
 
 - Dynatrace ist nicht Endpunkt, sondern Blaupause
 - Aufbau von Betriebs-, Marketplace- und Automation-Patterns fuer weitere Services
@@ -407,7 +429,7 @@ layout: two-cols
 layout: two-cols
 ---
 
-# Welche Services folgen?
+## Welche Services folgen?
 
 - Die Architektur- und Betriebsprinzipien lassen sich auf weitere Produkte uebertragen
 - Interessant sind Services mit aehnlichen Anforderungen an Souveraenitaet und Betriebsreife
@@ -425,7 +447,7 @@ layout: two-cols
 layout: two-cols
 ---
 
-# Kernaussagen
+## Kernaussagen
 
 - Observability ist technische und organisatorische Voraussetzung fuer Souveraenitaet
 - Die Tool-Auswahl war ein Produkt- und Betriebsentscheid, nicht nur ein Feature-Vergleich
