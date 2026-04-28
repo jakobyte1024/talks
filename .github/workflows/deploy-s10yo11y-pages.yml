@@ -37,7 +37,12 @@ jobs:
 
       - name: Build Slidev deck
         working-directory: s10yo11y/slides
-        run: npm run build -- --base "/${{ github.event.repository.name }}/"
+        run: npm run build -- --base "/${{ github.event.repository.name }}/s10o11y/"
+
+      - name: Prepare Pages artifact
+        run: |
+          mkdir -p .pages/s10o11y
+          cp -R s10yo11y/slides/dist/. .pages/s10o11y/
 
       - name: Setup GitHub Pages
         uses: actions/configure-pages@v5
@@ -45,7 +50,7 @@ jobs:
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v4
         with:
-          path: s10yo11y/slides/dist
+          path: .pages
 
   deploy:
     name: Deploy

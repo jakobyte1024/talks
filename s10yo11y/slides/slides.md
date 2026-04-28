@@ -41,7 +41,7 @@ He often shares his experience at IT conferences.
 
 ---
 layout: image-left
-image: /images/cgiOverview.png
+image: images/cgiOverview.png
 backgroundSize: contain
 ---
 
@@ -81,7 +81,7 @@ layout: section
 
 ---
 layout: image-right
-image: /images/o11y-overview.png
+image: images/o11y-overview.png
 backgroundSize: contain
 ---
 
@@ -102,7 +102,7 @@ Monitoring beantwortet bekannte Fragen - Observability hilft bei unbekannten Feh
 
 ---
 layout: image-left
-image: /images/o11y-activeexample.png
+image: images/o11y-activeexample.png
 backgroundSize: contain
 ---
 
@@ -174,7 +174,7 @@ Das möchten wir professionell als Managed Service Offering adressieren.
 
 ---
 layout: image-right
-image: /images/o11y-platforms.png
+image: images/o11y-platforms.png
 backgroundSize: contain
 ---
 
@@ -198,7 +198,7 @@ layout: section
 
 ---
 layout: image-right
-image: /images/sales.png
+image: images/sales.png
 backgroundSize: contain
 ---
 
@@ -217,7 +217,7 @@ Nun da wir die Idee und eine gute Begründung haben, brauchen wir einen USP.
 
 ---
 layout: image-left
-image: /images/deliveryteam.png
+image: images/deliveryteam.png
 backgroundSize: contain
 ---
 
@@ -250,7 +250,7 @@ geht nirgends anders hin
 
 ---
 layout: image-right
-image: /images/thesismax.png
+image: images/thesismax.png
 backgroundSize: contain
 ---
 
