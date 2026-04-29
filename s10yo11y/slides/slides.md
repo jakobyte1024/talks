@@ -423,9 +423,7 @@ Jetzt fehlen nur noch Kunden...
 Looking at you. #noSales
 
 ---
-layout: end
+layout: image
+image: images/finalSlide.png
+backgroundSize: 95%
 ---
-
-# Danke
-
-Fragen?
