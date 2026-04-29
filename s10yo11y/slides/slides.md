@@ -296,8 +296,9 @@ backgroundSize: contain
 ## SRE für Non-Cloud-Native
 
 Dynatrace ist führend in Feature und Produktdesign.
-In der Managed-Variante ist es kein klassisches SRE-first Design
-Der Fokus liegt vermutlich auf Kompatibilität zu den meisten Datacenter ein eher klassisches Setup.
+
+In der Managed-Variante ist es kein klassisches SRE@Cloud-first Design.
+Der Fokus liegt vermutlich auf Kompatibilität zu den meisten Datacenter ein eher klassisches oder gar Air-Gap Setup.
 
 Trotzdem braucht der Service SLO-Denken, Runbooks, Automatisierung und Autoscaling.
 Das muss unser Team nun selbst bauen.
@@ -329,7 +330,7 @@ backgroundSize: contain
 Wir haben uns eine Architektur überlegt, die zwei Betriebsmodelle sauber trennt und in zwei Aspekten denkt
 
 - Dedicated: stark isolierte Kunden- oder Tenant-Setups
-- Shared: für mehrere Kunden
+- Shared: für mehrere Kunden; mit Dynatrace Multi Tenant Setup
 
 Beide Designs sind darauf ausgelegt dass eingehender Traffic _extern_ nach STACKIT kommt oder _intern_ aus STACKIT emittiert wird.
 
@@ -337,51 +338,27 @@ Das API Gateway kann basierend darauf Routing-Entscheidungen treffen.
 Damit adressieren wir Traffic-Hoheit.
 
 ---
-layout: two-cols
+layout: image
+image: images/dt-teamCode.png
+backgroundSize: 95%
 ---
 
-## How to install
-
-und dann ansible
-
-::right::
-
-### Visual
-
-tbd
-
 ---
-layout: two-cols
+layout: image-left
+image: images/dt-teamCode2.png
+backgroundSize: contain
 ---
 
-## Quirks, Networking und Support
+## Quirks und Support
 
-- ALB-Funktionalitaet gab es nur via API, nicht ueber Terraform
-- API Gateway wurde auch fuer monetarisierte APIs und Environment-Routing relevant
+Das SRE-Team hat die IaaS & PaaS Komponenten kennengelernt.
+Dazu gehörten auch mehrere Überraschungen.
+Beispielsweise:
+
+- Application Loadbalancer gab es nur via API, nicht via Terraform
+- KMS Integration mit gängigen Tools
 - Netzwerktrennung und Environment-Grenzen beeinflussten das Betriebsmodell direkt
-- Support war schnell und gut, trotz mehrerer technischer Issues im Aufbau
-
-::right::
-
-### Visual
-
-- Netzwerkdiagramm
-- API-Flow
-
----
-layout: two-cols
----
-
-## Team shoutout
-
-- CGI Team
-- STACKIT Support
-
-::right::
-
-### Visual
-
-- Bilder usw
+- Dev-Tooling
 
 ---
 layout: image-right
@@ -403,63 +380,48 @@ So komplex dass sogar eine ganze Forschungsarbeit von Max Strack dazu verfasst w
 Max wird dazu vielleicht eigene Talks geben, stay tuned :)
 
 ---
-layout: section
+layout: image-right
+image: images/cgiSTACKIT.png
+backgroundSize: contain
 ---
 
-# Ausblick
+## Ausblick
+
+Unsere Codebase ist als Fundament ausgelegt.
+Sie funktioniert für Dynatrace, als auch für weitere Managed Services auf STACKIT.
+
+Als nächstes widmen wir uns der technischen Marketplace Integration.
+
+Zeitlich passend hat CGI jüngst bekannt gegeben, dass wir beabsichtigen
+
+- Dev-Tooling-Plattform (bspw. Coder)
+- API Gateway (bspw. Gravitee.io)
+- Eventstreaming (bspw. Kafka)
+
+auf STACKIT anzubieten.
 
 ---
-layout: two-cols
+layout: image-left
+image: images/dt-teamLooking.png
+backgroundSize: contain
 ---
 
-## Wiederverwendbare Muster
+## Shoutout
 
-- Dynatrace ist nicht Endpunkt, sondern Blaupause
-- Aufbau von Betriebs-, Marketplace- und Automation-Patterns fuer weitere Services
-- Wiederverwendbare Bestandteile: Provisioning, Routing, Consumption, Supportmodell
+Zeit sich zu bedanken: großer Shoutout an unser Team.
+In wenigen von 
+> noch nie mit Dynatrace oder STACKIT gearbeitet
 
-::right::
+zu
 
-### Visual
+> DEV & PROD up and running
 
-- Reusable Building Blocks
-- Service Blueprint
+Ebenso gut war der schnelle Support von STACKIT.
+Wir haben leidenschaftlich Tickets eröffnet und waren beeindruckt wie schnell Bugs behoben werden.
 
----
-layout: two-cols
----
+Jetzt fehlen nur noch Kunden...
 
-## Welche Services folgen?
-
-- Die Architektur- und Betriebsprinzipien lassen sich auf weitere Produkte uebertragen
-- Interessant sind Services mit aehnlichen Anforderungen an Souveraenitaet und Betriebsreife
-- Marketplace und Managed Operations werden zur wiederholbaren Plattformfaehigkeit
-- Abschlussfrage: Welche weiteren Managed Services profitieren von demselben Ansatz?
-
-::right::
-
-### Visual
-
-- Service-Roadmap
-- Portfolio-Optionen
-
----
-layout: two-cols
----
-
-## Kernaussagen
-
-- Observability ist technische und organisatorische Voraussetzung fuer Souveraenitaet
-- Die Tool-Auswahl war ein Produkt- und Betriebsentscheid, nicht nur ein Feature-Vergleich
-- Marketplace, Consumption und Security beeinflussen die Architektur direkt
-- SRE-Prinzipien und starke Automation kompensieren viele Produktgrenzen
-
-::right::
-
-### Summary
-
-- 3 Key Messages
-- Optional: QR-Code / Contact
+Looking at you. #noSales
 
 ---
 layout: end
