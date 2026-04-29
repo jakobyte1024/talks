@@ -46,9 +46,9 @@ backgroundSize: contain
 
 ## CGI
 
-CGI ist ein globaler IT-Consulting-Konzern mit rund 94.000 Mitarbeitenden weltweit. 
+CGI is a global IT consulting company with around 94,000 employees worldwide.
 
-Was CGI besonders macht: globale Stärke und Skalierung, kombiniert mit einem sehr lokalen Delivery-Modell – nah an den Kunden, nah an den Teams und nah an der Umsetzung.
+What makes CGI stand out is its combination of global scale and strength with a highly local delivery model: close to clients, close to teams, and close to execution.
 
 ---
 layout: two-cols
@@ -57,18 +57,18 @@ layout: two-cols
 ## TOC
 
 1. Observability basics
-2. Warum O11y für Souveränität relevant ist
-3. Tool-Auswahl und Dynatrace-Entscheidung
-4. USP finden
+2. Why O11y matters for sovereignty
+3. Tool selection and the Dynatrace decision
+4. Finding a USP
 5. Managed Service auf dem Marketplace
-6. Betrieb, Automation und technische Hürden
-7. Ausblick auf weitere Services
+6. Operations, automation, and technical hurdles
+7. Outlook on further services
 
 ::right::
 
 ### Out of scope
 
-- Werbung
+- Marketing
 - Sales
 
 ---
@@ -84,20 +84,20 @@ image: images/o11y-overview.png
 backgroundSize: contain
 ---
 
-## Was ist Observability?
+## What is observability?
 
-Observability (O11y) ist mehr als "nur" Monitoring.
-Es ist eine Fähigkeit, die eine reife IT gezielt einsetzt.
+Observability (O11y) is more than "just" monitoring.
+It is a capability that mature IT organizations use deliberately.
 
-Aus vielen Daten und Quellen wird das Gesamtsystem oder gar die ganze IT überwacht. Dazu gibt es "Säulen":
+Many data sources are combined to observe the overall system, or even the full IT landscape. The common "pillars" are:
 * Logs
 * Metrics
 * Traces
 * Topology, Events
 
-Ziel ist es, Systeme zu verstehen - nicht nur Alarmierungen zu sammeln.
+The goal is to understand systems, not just to collect alerts.
 
-Monitoring beantwortet bekannte Fragen - Observability hilft bei unbekannten Fehlerbildern.
+Monitoring answers known questions - observability helps with unknown failure scenarios.
 
 ---
 layout: image-left
@@ -105,14 +105,14 @@ image: images/o11y-activeexample.png
 backgroundSize: contain
 ---
 
-## Aktiv und Passiv
+## Active and passive
 
-Durch Observability entstehen Blickwinkel auf Systeme, durch Korrelation und Kontext.
-Diese können verschiedenste Schwerpunkte haben, beispielsweise:
+Observability creates different views on systems through correlation and context.
+These views can focus on very different concerns, for example:
 
-* Erklärbarkeit / Diagnose / Post-Mortem
-* Performanz oder Durchlaufzeiten einer Request
-* Anomalien beobachten und behandeln
+* Explainability / diagnosis / post-mortems
+* Performance or end-to-end request latency
+* Detecting and handling anomalies
 * Resilience Control
 
 ---
@@ -124,15 +124,16 @@ backgroundSize: contain
 ## Paramount
 
 Dass Observability von besonderer Wichtigkeit sein kann, zeigt sich schnell wenn man typische Angriffsszenarien simuliert.
-Wie wird folgendes Szenario erkannt?
-* Plötzlich viele Token Requests
-* Häufung von Service Calls
-* Fehlgeschlagene Authentifizierungen
-* Pods starten offenbar chaotisch neu, jedoch kein Service Down
+This becomes obvious very quickly when you simulate common attack scenarios.
+How would the following situation be detected?
+* Suddenly many token requests
+* A spike in service calls
+* Failed authentication attempts
+* Pods restarting chaotically, but no service outage
 
-Ohne Security Context sind dies losgelöste Ereignisse, welche vielleicht gar nicht bemerkt werden.
+Without security context, these are disconnected events that might not even be noticed.
 
-Im Talk und Lab [Live Hacking Cloud Architectures](https://www.youtube.com/watch?v=ZC1YwpwVlo0) zeigen wir typische Szenarien und enden mit einer Weisheit.
+In the talk and lab [Live Hacking Cloud Architectures](https://www.youtube.com/watch?v=ZC1YwpwVlo0), we show typical scenarios and end with one core lesson.
 
 
 ---
@@ -140,7 +141,7 @@ layout: section
 
 ---
 
-# O11y für Souveränität
+# O11y for Sovereignty
 
 ---
 layout: image-right
@@ -148,14 +149,14 @@ image: images/o11y-europestrength.png
 backgroundSize: contain
 ---
 
-## Digitale Souveränität
+## Digital sovereignty
 
-Von der Politik hin zum Techtalk: Einer der wichtigsten Begriffe für IT-Expert:innen ist aktuell wohl die digitale Souveränität. Dazu sagt die EU-Kommission:
+From politics to technical talks, one of the most relevant terms for IT experts right now is digital sovereignty. The EU Commission states:
 > Europe must now strengthen its digital sovereignty and set standards, rather than following those of others – with a clear focus on data, technology and infrastructure.
 
-_Digitale Souveränität bedeutet nicht, Systeme zu besitzen – sondern ihr Verhalten jederzeit nachvollziehen und beeinflussen zu können._
+_Digital sovereignty does not mean owning systems - it means being able to understand and influence their behavior at any time._
 
-Keine Observability → Keine Kontrolle → Keine Souveränität.
+No observability → no control → no sovereignty.
 
 ---
 layout: image-left
@@ -163,13 +164,13 @@ image: images/o11y-challenge.png
 backgroundSize: contain
 ---
 
-## Klarer Fall: O11y Plattformen auf EU Cloud 
+## A clear case: O11y platforms on EU cloud
 
-Souveräne IT-Landschaften brauchen Observability-Plattformen.
-Doch im Spannungsfeld der Datenhoheit ist das mit manchen Tools schwierig.
+Sovereign IT landscapes need observability platforms.
+But in the context of data sovereignty, some tools make this difficult.
 
-Passend zu den wachsenden Bedürfnissen nach digitaler Souveränität der Branchen in der EU braucht es in der EU gehostete Observability-Plattformen.
-Das möchten wir professionell als Managed Service Offering adressieren. 
+To match the growing sovereignty requirements of industries in the EU, observability platforms need to be hosted within the EU.
+This is exactly what we want to address professionally as a managed service offering.
 
 ---
 layout: image-right
@@ -177,15 +178,15 @@ image: images/o11y-platforms.png
 backgroundSize: contain
 ---
 
-## Tooling-Landschaft
+## Tooling landscape
 
-Es gibt viele gute Observability-Tools - vor allem im Open-Source-Bereich.
-Im Managed Service Offering konzentrieren wir uns zunächst auf
-* kommerzielle Anbieter mit entsprechenden Wartungsverträgen
-* mögliche Self-hosted-Varianten
-* wenig Marktbegleiter im öffentlichen Hosting
-* eigene Lieferfähigkeit in der Technologieberatung
-* breite Abdeckung für Plattform, Anwendungen und Betrieb
+There are many good observability tools, especially in the open source ecosystem.
+For our managed service offering, we initially focus on:
+* commercial vendors with proper support contracts
+* self-hosted options
+* limited competition in public hosted offerings
+* our own delivery capability in technology consulting
+* broad coverage across platform, applications, and operations
 
 
 ---
@@ -201,15 +202,15 @@ image: images/sales.png
 backgroundSize: contain
 ---
 
-## Was brauchen denn unsere Kunden?
+## What do our customers need?
 
-Nun, da wir die Idee und eine gute Begründung haben, brauchen wir einen USP.
+Now that we have the idea and a solid rationale, we need a USP.
 
 <v-clicks>
 
-- Datenhoheit über in-transit und at rest
-- Traffic-Hoheit
-- Vertragsmanagement
+- Data sovereignty for in-transit and at-rest data
+- Traffic sovereignty
+- Contract management
 - Shared & Dedicated Offering
 
 </v-clicks>
@@ -220,9 +221,9 @@ image: images/deliveryteam.png
 backgroundSize: contain
 ---
 
-## Und was brauchen wir in der Service-Delivery?
+## And what do we need in service delivery?
 
-Damit wir einen guten Service liefern
+To deliver a strong service, we need:
 
 <v-clicks>
 
@@ -238,13 +239,13 @@ image: images/marketplaceO11dsol.png
 backgroundSize: contain
 ---
 
-## Das Ziel: Marketplace Observability Integration
+## The goal: marketplace observability integration
 
-Die Fähigkeit ist wichtig und der Anbietermarkt groß.
-Wir denken an eine umfangreiche Integration des STACKIT Marketplace in alle passenden Workloads und Ressourcen.
+The capability matters, and the vendor market is broad.
+We are aiming for a comprehensive integration of the STACKIT Marketplace into all relevant workloads and resources.
 
-Es geht nicht "nur" um Installation, sondern auch um Betriebsmodell, Support und Consumption.
-Doch ein Marketplace-Kontext bringt technische und kommerzielle Randbedingungen mit.
+It is not "just" about installation, but also about the operating model, support, and consumption.
+At the same time, a marketplace context introduces technical and commercial constraints.
 
 ---
 layout: image-left
@@ -252,17 +253,17 @@ image: images/marketplace-comsumption.png
 backgroundSize: contain
 ---
 
-## Pricing und Consumption
+## Pricing and consumption
 
-Dynatrace und ähnliche Tools nutzen ein ausgereiftes und feingranulares Preismodell.
-Das ist nahezu das Gegenteil zu einer "monatlichen Rate auf Basis von T-Shirt-Sizes".
+Dynatrace and similar tools use a mature and highly granular pricing model.
+That is almost the opposite of a "monthly flat rate based on T-shirt sizes."
 
-- Consumption muss für Kunden nachvollziehbar und steuerbar sein
-- Pricing passt nicht automatisch zu Plattform- und Marketplace-Modellen
-- Technische Architektur wird durch Abrechnung und Mandantenfähigkeit beeinflusst
+* Consumption must be understandable and controllable for customers
+* Pricing does not automatically fit platform and marketplace models
+* Technical architecture is influenced by billing and multi-tenancy
 
-Das heißt jedoch auch, dass der Marketplace nicht zwingend Consumption Insights generieren muss.
-Monetarisierung ist kein Nachgedanke, sondern ein Architekturtreiber.
+That also means the marketplace does not necessarily need to generate consumption insights itself.
+Monetization is not an afterthought, but an architectural driver.
 
 ---
 layout: section
@@ -276,15 +277,15 @@ image: images/dt-teamchallenge.png
 backgroundSize: contain
 ---
 
-## SRE-Ansatz und Automatisierung
+## SRE approach and automation
 
 > Site Reliability Engineering (SRE)
 
-Eine Site ist kein einzelner Server, sondern ein nutzbares System aus Anwendungen, Infrastruktur und Abhängigkeiten.
-SRE sorgt dafür, dass diese Site zuverlässig läuft – messbar, automatisiert und mit klaren Zielen für Verfügbarkeit und Qualität.
+A site is not a single server. It is a usable system made up of applications, infrastructure, and dependencies.
+SRE ensures that this site runs reliably - measurable, automated, and with clear goals for availability and quality.
 
-SRE kann man im Team machen.
-Solche Teams arbeiten oft mit Terraform, Ansible, GitOps, Kubernetes, Service Mesh, Incident Management und On-Call.
+SRE can be done as a team discipline.
+Such teams often work with Terraform, Ansible, GitOps, Kubernetes, service mesh, incident management, and on-call.
 
 ---
 layout: image-left
@@ -292,15 +293,15 @@ image: images/dt-originalArch.png
 backgroundSize: contain
 ---
 
-## SRE für Non-Cloud-Native
+## SRE for non-cloud-native software
 
-Dynatrace ist führend in Feature- und Produktdesign.
+Dynatrace is strong in both features and product design.
 
-In der Managed-Variante ist es kein klassisches SRE@Cloud-first Design.
-Der Fokus liegt vermutlich auf Kompatibilität zu den meisten Datacentern, eher klassischen Setups oder gar Air-Gap-Umgebungen.
+In its managed form, however, it is not a classic SRE@Cloud-first design.
+The focus is likely on compatibility with most datacenters, more traditional setups, or even air-gapped environments.
 
-Trotzdem braucht der Service SLO-Denken, Runbooks, Automatisierung und Autoscaling.
-Das muss unser Team nun selbst bauen.
+Still, the service needs SLO thinking, runbooks, automation, and autoscaling.
+That is something our team has to build on its own.
 
 ---
 layout: image-right
@@ -310,13 +311,13 @@ backgroundSize: contain
 
 ## Team
 
-An der Challenge war ein Team mit verschiedensten Senioritätsstufen interessiert.
-Ein Mix
+The challenge attracted a team with a wide range of seniority levels.
+A mix of:
 - Cloud Engineers
 - Observability Consultants
-- Architekten
+- Architects
 
-begannen mit der Einarbeitung in STACKIT und Dynatrace.
+started onboarding into STACKIT and Dynatrace.
 
 ---
 layout: image-left
@@ -324,17 +325,17 @@ image: images/dt-targetArch.png
 backgroundSize: contain
 ---
 
-## Architekturdesign
+## Architecture design
 
-Wir haben uns eine Architektur überlegt, die zwei Betriebsmodelle sauber trennt und zwei Aspekte berücksichtigt:
+We designed an architecture that cleanly separates two operating models and covers two dimensions:
 
-- Dedicated: stark isolierte Kunden- oder Tenant-Setups
-- Shared: für mehrere Kunden, mit Dynatrace-Multi-Tenant-Setup
+- Dedicated: strongly isolated customer or tenant setups
+- Shared: for multiple customers, using a Dynatrace multi-tenant setup
 
-Beide Designs sind darauf ausgelegt, dass eingehender Traffic _extern_ nach STACKIT kommt oder _intern_ aus STACKIT emittiert wird.
+Both designs assume that incoming traffic either enters STACKIT from the _outside_ or is emitted _internally_ from within STACKIT.
 
-Das API Gateway kann basierend darauf Routing-Entscheidungen treffen.
-Damit adressieren wir Traffic-Hoheit.
+The API gateway can make routing decisions based on that distinction.
+This is how we address traffic sovereignty.
 
 ---
 layout: image
@@ -348,16 +349,15 @@ image: images/dt-teamCode2.png
 backgroundSize: contain
 ---
 
-## Quirks und Support
+## Quirks and support
 
-Das SRE-Team hat die IaaS & PaaS Komponenten kennengelernt.
-Dazu gehörten auch mehrere Überraschungen.
-Beispielsweise:
+The SRE team had to get familiar with the IaaS and PaaS components.
+That included several surprises, for example:
 
-- Einen Application Load Balancer gab es nur via API, nicht via Terraform
-- KMS Integration mit gängigen Tools
-- Netzwerktrennung und Environment-Grenzen beeinflussten das Betriebsmodell direkt
-- Dev-Tooling
+- The Application Load Balancer was only available via API, not via Terraform
+- KMS integration with common tooling
+- Network separation and environment boundaries directly affected the operating model
+- Dev tooling
 
 ---
 layout: image-right
@@ -367,16 +367,16 @@ backgroundSize: contain
 
 # Research & Thesis
 
-Das BYOK-Thema war komplex.
-So komplex, dass sogar eine ganze Forschungsarbeit von Max Strack dazu verfasst wurde.
+The BYOK topic was complex.
+So complex that Max Strack wrote an entire research thesis on it.
 
->
-> Die Arbeit untersucht, wie ein Managed Dynatrace Service auf STACKIT mit Bring Your Own Key souveräner betrieben werden kann. 
-> Dafür wird die Persistenzschicht per dm-crypt/LUKS verschlüsselt und die Schlüsselkontrolle über das STACKIT KMS betrachtet. 
-> Verglichen werden Dedicated- und Shared-Betriebsmodelle hinsichtlich Sicherheit, Compliance und Datensouveränität.
+> 
+> The thesis investigates how a managed Dynatrace service on STACKIT can be operated more sovereignly using Bring Your Own Key.
+> It evaluates encrypting the persistence layer via dm-crypt/LUKS and analyzes key control through STACKIT KMS.
+> It compares dedicated and shared operating models with regard to security, compliance, and data sovereignty.
 >
 
-Max wird dazu vielleicht eigene Talks geben, stay tuned :)
+Max may give separate talks on this topic, so stay tuned :)
 
 ---
 layout: image-right
@@ -384,20 +384,20 @@ image: images/cgiSTACKIT.png
 backgroundSize: contain
 ---
 
-## Ausblick
+## Outlook
 
-Unsere Codebase ist als Fundament ausgelegt.
-Sie funktioniert für Dynatrace, als auch für weitere Managed Services auf STACKIT.
+Our codebase is designed as a foundation.
+It works not only for Dynatrace, but also for additional managed services on STACKIT.
 
-Als nächstes widmen wir uns der technischen Marketplace Integration.
+Next, we are focusing on the technical marketplace integration.
 
-Zeitlich passend hat CGI jüngst bekannt gegeben, dass wir beabsichtigen
+At the right time, CGI recently announced that we intend to offer:
 
-- Dev-Tooling-Plattform (bspw. Coder)
-- API Gateway (bspw. Gravitee.io)
-- Eventstreaming (bspw. Kafka)
+- Dev tooling platform (for example Coder)
+- API gateway (for example Gravitee.io)
+- Event streaming (for example Kafka)
 
-auf STACKIT anzubieten.
+on STACKIT.
 
 ---
 layout: image-left
@@ -407,18 +407,18 @@ backgroundSize: contain
 
 ## Shoutout
 
-Zeit, sich zu bedanken: großer Shoutout an unser Team.
-In kurzer Zeit von
-> noch nie mit Dynatrace oder STACKIT gearbeitet
+Time to say thanks: a big shoutout to our team.
+In a short time, they went from
+> never having worked with Dynatrace or STACKIT
 
-zu
+to
 
 > DEV & PROD up and running
 
-Ebenso gut war der schnelle Support von STACKIT.
-Wir haben leidenschaftlich Tickets eröffnet und waren beeindruckt, wie schnell Bugs behoben wurden.
+The fast support from STACKIT was equally strong.
+We opened tickets with great enthusiasm and were impressed by how quickly bugs got fixed.
 
-Jetzt fehlen nur noch Kunden...
+Now we only need customers...
 
 Looking at you. #noSales
 
