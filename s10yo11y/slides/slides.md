@@ -15,8 +15,7 @@ layout: cover
 
 # Sovereignty Through Observability
 
-Dynatrace on STACKIT, managed by CGI
-
+Dynatrace on STACKIT, managed by CGI.
 How we built the service
 
 Thorsten Jakoby
@@ -55,14 +54,14 @@ Was CGI besonders macht: globale Stärke und Skalierung, kombiniert mit einem se
 layout: two-cols
 ---
 
-## Agenda
+## TOC
 
 1. Observability basics
-2. Warum O11y fuer Souveraenitaet relevant ist
+2. Warum O11y für Souveränität relevant ist
 3. Tool-Auswahl und Dynatrace-Entscheidung
 4. USP finden
 5. Managed Service auf dem Marketplace
-6. Betrieb, Automation und technische Huerden
+6. Betrieb, Automation und technische Hürden
 7. Ausblick auf weitere Services
 
 ::right::
@@ -88,15 +87,15 @@ backgroundSize: contain
 ## Was ist Observability?
 
 Observability (O11y) ist mehr als "nur" Monitoring.
-Es ist eine Fähigkeit die eine reife IT gezielt einsetzt.
+Es ist eine Fähigkeit, die eine reife IT gezielt einsetzt.
 
-Aus vielen Daten und Quellen wird Gesamtsystem oder gar die ganze IT überwacht. Dazu gibt es "Säulen":
+Aus vielen Daten und Quellen wird das Gesamtsystem oder gar die ganze IT überwacht. Dazu gibt es "Säulen":
 * Logs
 * Metrics
 * Traces
 * Topology, Events
 
-Ziel ist es, Systeme zu verstehen - nicht nur Alarmierungen sammeln
+Ziel ist es, Systeme zu verstehen - nicht nur Alarmierungen zu sammeln.
 
 Monitoring beantwortet bekannte Fragen - Observability hilft bei unbekannten Fehlerbildern.
 
@@ -113,7 +112,7 @@ Diese können verschiedenste Schwerpunkte haben, beispielsweise:
 
 * Erklärbarkeit / Diagnose / Post-Mortem
 * Performanz oder Durchlaufzeiten einer Request
-* Anamolien beobachten und behandeln
+* Anomalien beobachten und behandeln
 * Resilience Control
 
 ---
@@ -141,7 +140,7 @@ layout: section
 
 ---
 
-# O11y fuer Souveraenitaet
+# O11y für Souveränität
 
 ---
 layout: image-right
@@ -151,7 +150,7 @@ backgroundSize: contain
 
 ## Digitale Souveränität
 
-Von der Politik hin zum Techtalk - einer der wichtigsten Begriffe für IT-Expert:innen ist aktuell wohl die Digitale Souveränität. Dazu sagt die EU Commision
+Von der Politik hin zum Techtalk: Einer der wichtigsten Begriffe für IT-Expert:innen ist aktuell wohl die digitale Souveränität. Dazu sagt die EU-Kommission:
 > Europe must now strengthen its digital sovereignty and set standards, rather than following those of others – with a clear focus on data, technology and infrastructure.
 
 _Digitale Souveränität bedeutet nicht, Systeme zu besitzen – sondern ihr Verhalten jederzeit nachvollziehen und beeinflussen zu können._
@@ -166,10 +165,10 @@ backgroundSize: contain
 
 ## Klarer Fall: O11y Plattformen auf EU Cloud 
 
-Souveräne IT-Landschaften brauchen Observability Plattformen.
+Souveräne IT-Landschaften brauchen Observability-Plattformen.
 Doch im Spannungsfeld der Datenhoheit ist das mit manchen Tools schwierig.
 
-Passend zu den wachsenden Befürdnissen nach digitaler Souveränität der Branchen in der EU braucht es in der EU gehostete Observability Plattformen.
+Passend zu den wachsenden Bedürfnissen nach digitaler Souveränität der Branchen in der EU braucht es in der EU gehostete Observability-Plattformen.
 Das möchten wir professionell als Managed Service Offering adressieren. 
 
 ---
@@ -180,13 +179,13 @@ backgroundSize: contain
 
 ## Tooling-Landschaft
 
-Es gibt viele gute Observability Tools - vor allem im Open Source Bereich.
+Es gibt viele gute Observability-Tools - vor allem im Open-Source-Bereich.
 Im Managed Service Offering konzentrieren wir uns zunächst auf
 * kommerzielle Anbieter mit entsprechenden Wartungsverträgen
-* möglichen Selfhosted Varianten
+* mögliche Self-hosted-Varianten
 * wenig Marktbegleiter im öffentlichen Hosting
 * eigene Lieferfähigkeit in der Technologieberatung
-* Breite Abdeckung fuer Plattform, Anwendungen und Betrieb
+* breite Abdeckung für Plattform, Anwendungen und Betrieb
 
 
 ---
@@ -204,7 +203,7 @@ backgroundSize: contain
 
 ## Was brauchen denn unsere Kunden?
 
-Nun da wir die Idee und eine gute Begründung haben, brauchen wir einen USP.
+Nun, da wir die Idee und eine gute Begründung haben, brauchen wir einen USP.
 
 <v-clicks>
 
@@ -244,7 +243,7 @@ backgroundSize: contain
 Die Fähigkeit ist wichtig und der Anbietermarkt groß.
 Wir denken an eine umfangreiche Integration des STACKIT Marketplace in alle passenden Workloads und Ressourcen.
 
-Nicht "nur" Installation, sondern Betriebsmodell, Support und Consumption
+Es geht nicht "nur" um Installation, sondern auch um Betriebsmodell, Support und Consumption.
 Doch ein Marketplace-Kontext bringt technische und kommerzielle Randbedingungen mit.
 
 ---
@@ -256,14 +255,14 @@ backgroundSize: contain
 ## Pricing und Consumption
 
 Dynatrace und ähnliche Tools nutzen ein ausgereiftes und feingranulares Preismodell.
-Das ist nahezu das Gegenteil zu "monatlicher Rate auf Basis T-Shirt Sizes" 
+Das ist nahezu das Gegenteil zu einer "monatlichen Rate auf Basis von T-Shirt-Sizes".
 
-- Consumption muss fuer Kunden nachvollziehbar und steuerbar sein
+- Consumption muss für Kunden nachvollziehbar und steuerbar sein
 - Pricing passt nicht automatisch zu Plattform- und Marketplace-Modellen
-- Technische Architektur wird durch Abrechnung und Mandantenfaehigkeit beeinflusst
+- Technische Architektur wird durch Abrechnung und Mandantenfähigkeit beeinflusst
 
-Das heißt jedoch auch dass der Marketplace nicht zwingend Consumption Insights generieren muss.
-Monetarisierung ist kein Nachgedanke, sondern Architekturtreiber
+Das heißt jedoch auch, dass der Marketplace nicht zwingend Consumption Insights generieren muss.
+Monetarisierung ist kein Nachgedanke, sondern ein Architekturtreiber.
 
 ---
 layout: section
@@ -285,7 +284,7 @@ Eine Site ist kein einzelner Server, sondern ein nutzbares System aus Anwendunge
 SRE sorgt dafür, dass diese Site zuverlässig läuft – messbar, automatisiert und mit klaren Zielen für Verfügbarkeit und Qualität.
 
 SRE kann man im Team machen.
-Solche Teams arbeiten oft mit Terraform, Ansible, GitOps, Kubernetes, Service Mesh, Incident Management, OnCall
+Solche Teams arbeiten oft mit Terraform, Ansible, GitOps, Kubernetes, Service Mesh, Incident Management und On-Call.
 
 ---
 layout: image-left
@@ -295,10 +294,10 @@ backgroundSize: contain
 
 ## SRE für Non-Cloud-Native
 
-Dynatrace ist führend in Feature und Produktdesign.
+Dynatrace ist führend in Feature- und Produktdesign.
 
 In der Managed-Variante ist es kein klassisches SRE@Cloud-first Design.
-Der Fokus liegt vermutlich auf Kompatibilität zu den meisten Datacenter ein eher klassisches oder gar Air-Gap Setup.
+Der Fokus liegt vermutlich auf Kompatibilität zu den meisten Datacentern, eher klassischen Setups oder gar Air-Gap-Umgebungen.
 
 Trotzdem braucht der Service SLO-Denken, Runbooks, Automatisierung und Autoscaling.
 Das muss unser Team nun selbst bauen.
@@ -311,9 +310,9 @@ backgroundSize: contain
 
 ## Team
 
-An der Challenge war ein Team verschiedenster Senioritätsstufen interessiert.
+An der Challenge war ein Team mit verschiedensten Senioritätsstufen interessiert.
 Ein Mix
-- Cloud Engineeers
+- Cloud Engineers
 - Observability Consultants
 - Architekten
 
@@ -327,12 +326,12 @@ backgroundSize: contain
 
 ## Architekturdesign
 
-Wir haben uns eine Architektur überlegt, die zwei Betriebsmodelle sauber trennt und in zwei Aspekten denkt
+Wir haben uns eine Architektur überlegt, die zwei Betriebsmodelle sauber trennt und zwei Aspekte berücksichtigt:
 
 - Dedicated: stark isolierte Kunden- oder Tenant-Setups
-- Shared: für mehrere Kunden; mit Dynatrace Multi Tenant Setup
+- Shared: für mehrere Kunden, mit Dynatrace-Multi-Tenant-Setup
 
-Beide Designs sind darauf ausgelegt dass eingehender Traffic _extern_ nach STACKIT kommt oder _intern_ aus STACKIT emittiert wird.
+Beide Designs sind darauf ausgelegt, dass eingehender Traffic _extern_ nach STACKIT kommt oder _intern_ aus STACKIT emittiert wird.
 
 Das API Gateway kann basierend darauf Routing-Entscheidungen treffen.
 Damit adressieren wir Traffic-Hoheit.
@@ -355,7 +354,7 @@ Das SRE-Team hat die IaaS & PaaS Komponenten kennengelernt.
 Dazu gehörten auch mehrere Überraschungen.
 Beispielsweise:
 
-- Application Loadbalancer gab es nur via API, nicht via Terraform
+- Einen Application Load Balancer gab es nur via API, nicht via Terraform
 - KMS Integration mit gängigen Tools
 - Netzwerktrennung und Environment-Grenzen beeinflussten das Betriebsmodell direkt
 - Dev-Tooling
@@ -368,8 +367,8 @@ backgroundSize: contain
 
 # Research & Thesis
 
-Das BYOK Thema war komplex.
-So komplex dass sogar eine ganze Forschungsarbeit von Max Strack dazu verfasst wurde
+Das BYOK-Thema war komplex.
+So komplex, dass sogar eine ganze Forschungsarbeit von Max Strack dazu verfasst wurde.
 
 >
 > Die Arbeit untersucht, wie ein Managed Dynatrace Service auf STACKIT mit Bring Your Own Key souveräner betrieben werden kann. 
@@ -408,8 +407,8 @@ backgroundSize: contain
 
 ## Shoutout
 
-Zeit sich zu bedanken: großer Shoutout an unser Team.
-In wenigen von 
+Zeit, sich zu bedanken: großer Shoutout an unser Team.
+In kurzer Zeit von
 > noch nie mit Dynatrace oder STACKIT gearbeitet
 
 zu
@@ -417,7 +416,7 @@ zu
 > DEV & PROD up and running
 
 Ebenso gut war der schnelle Support von STACKIT.
-Wir haben leidenschaftlich Tickets eröffnet und waren beeindruckt wie schnell Bugs behoben werden.
+Wir haben leidenschaftlich Tickets eröffnet und waren beeindruckt, wie schnell Bugs behoben wurden.
 
 Jetzt fehlen nur noch Kunden...
 
