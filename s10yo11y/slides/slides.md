@@ -123,7 +123,7 @@ backgroundSize: contain
 
 ## Paramount
 
-Dass Observability von besonderer Wichtigkeit sein kann, zeigt sich schnell wenn man typische Angriffsszenarien simuliert.
+Observability can become very important.
 This becomes obvious very quickly when you simulate common attack scenarios.
 How would the following situation be detected?
 * Suddenly many token requests
@@ -365,7 +365,7 @@ image: images/thesismax.png
 backgroundSize: contain
 ---
 
-# Research & Thesis
+## Research & Thesis
 
 The BYOK topic was complex.
 So complex that Max Strack wrote an entire research thesis on it.
